@@ -1,0 +1,68 @@
+.wrapper {
+	width: 80%;
+	margin: auto;
+	height: 800px;  /*OJO: no se deben usar alturas*/
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+nav {
+	border-bottom: 2px solid black;
+}
+
+nav a {
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav li {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 0;
+	height: 50px;
+	line-height: 50px;   /*truco: una linea de texto, es el mismo interlineado de la alt. de mi elem. se va a centrar..altura 25px...interl..25px*/
+}
+
+nav ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*nav li:first-child {
+	margin-left: 0;
+}*/
+
+nav li:first-child a {
+	background-image: url(images/migraine.jpeg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	display: block;
+	text-indent: -9999em;   /*como ya es de bloque lo estoy sacando*/
+	width: 50px;
+	height: 50px;
+}
+
+form {
+	clear: left;
+	margin-top: 100px;
+}
+
+.logo img {
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: -20;
+	position: absolute;
+}
